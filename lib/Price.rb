@@ -1,3 +1,19 @@
+class Numeric
+
+  def copper
+    self % 100
+  end
+
+  def silver
+    (self / 100) % 100
+  end
+
+  def gold
+    self / (100 * 100)
+  end
+
+end
+
 class Price < Struct.new(:low, :high)
 
   def +(price)
@@ -17,10 +33,7 @@ class Price < Struct.new(:low, :high)
   end
 
   def self.pretty_print(total_copper)
-    copper = total_copper % 100
-    silver = (total_copper / 100) % 100
-    gold = total_copper / (100 * 100)
-    "#{gold}g #{silver}s #{copper}c"
+    "#{total_copper.gold}g #{total_copper.silver}s #{total_copper.copper}c"
   end
 
 end
