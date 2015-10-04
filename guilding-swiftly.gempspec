@@ -1,0 +1,12 @@
+Gem::Specification.new do |s|
+  s.name        = 'guilding-swiftly'
+  s.version     = '0.0.1'
+  s.date        = '2015-10-04'
+  s.summary     = 'Helper methods for the Guild Wars 2 API.'
+  s.description = 'Helper methods for the Guild Wars 2 API.'
+  s.authors     = ['Sam Collard']
+  s.email       = 'swift@swifteagle.co.uk'
+  s.files       = ['lib/guilding-swiftly.rb', 'lib/Price.rb']
+  s.homepage    = 'https://github.com/CheshireSwift/guilding-swiftly'
+  s.license     = 'MIT'
+end
